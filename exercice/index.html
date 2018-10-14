@@ -40,6 +40,28 @@
             width: 100%;
         }
 
+        footer {
+            padding-bottom: 15px;
+        }
+
+        .btn-circle {
+            padding: 0.375rem 0;
+            /* width: 1.875rem;
+            height: 1.875rem;
+            text-align: center;
+            font-size: 0.75rem;
+            line-height: 1.428571429;
+            border-radius: 0.938rem;*/
+        }
+
+        .btn-circle.btn-lg {
+            width: 4.125rem;
+            height: 4.125rem;
+            font-size: 1.5rem;
+            line-height: 2.33;
+            border-radius: 2.563rem;
+        }
+
         /* Styles pour les smartphones */
         #left,
         #side1,
@@ -76,7 +98,7 @@
 
 <body>
 
-    <header class="container">
+    <header class="container-fluid">
         <div class="row">
             <div class="col-md-4">
                 <a href="#"><img src="assets/img/maison.png" alt="logo"></a>
@@ -87,32 +109,36 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="container-fluid">
 
-        <nav class="navbar navbar-dark bg-primary">
+        <nav class="navbar">
             <div class="row">
                 <div id="left" class="col-md-8">
                     <a href="#"><img src="assets/img/city1.jpg" alt="Nos réalisations"></a>
                 </div>
 
-            <div class="row">
-                <div id="side1" class="col-md-4">
-                    <a href="#"><img src="assets/img/side1.jpg" alt="Nos projets"></a>
-                </div>
-                <div id="side2" class="col-md-4">
-                    <a href="#"><img src="assets/img/side2.jpg" alt="Notre ambition"></a>
+                <div class="row">
+                    <div id="side1" class="col-md-4">
+                        <a href="#"><img src="assets/img/side1.jpg" alt="Nos projets"></a>
+                    </div>
+                    <div id="side2" class="col-md-4">
+                        <a href="#"><img src="assets/img/side2.jpg" alt="Notre ambition"></a>
+                    </div>
                 </div>
             </div>
-        </div>
         </nav>
     </div>
 
-    <footer>
-        <a class="btn btn-primary" href="#"><i class="fa fa-twitter fa-2x"></i></a>
-        <a class="btn btn-primary" href="#"><i class="fa fa-facebook fa-2x"></i></a>
-        <a class="btn btn-primary" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-        <a class="btn btn-primary" href="#"><i class="fa fa-flickr fa-2x"></i></a>
-        <a class="btn btn-primary" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4" align="center">
+                <a class="btn btn-primary btn-circle btn-lg" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                <a class="btn btn-primary btn-circle btn-lg" href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                <a class="btn btn-primary btn-circle btn-lg" href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                <a class="btn btn-primary btn-circle btn-lg" href="#"><i class="fa fa-flickr fa-2x"></i></a>
+                <a class="btn btn-primary btn-circle btn-lg" href="#"><i class="fa fa-spotify fa-2x"></i></a>
+            </div>
+        </div>
     </footer>
 
 </body>
